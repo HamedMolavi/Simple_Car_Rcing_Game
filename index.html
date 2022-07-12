@@ -37,6 +37,15 @@
             min-height: 35px;
             opacity: 90%;
         }
+
+        .bg-blury {
+            background: rgba(255, 0, 0, 0.07);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(3.5px);
+            -webkit-backdrop-filter: blur(3.5px);
+            border: 1px solid rgba(255, 0, 0, 0.23);
+        }
     </style>
 
     <title>Car racing game</title>
@@ -45,14 +54,17 @@
 <body>
 
     <div id="raceField" class="container mt-4 py-4">
-        
+
     </div>
 
+    <div class="row justify-content-center">
+        <label for="chooseInput" class="col-md-auto col-form-label text-danger me-md-3">How Many Cars?</label>
+        <input type="text" class="form-control-sm col-md-1 me-md-4 text-danger" id="chooseInput" value="">
+        <button class="btn btn-warning text-danger col-auto" onclick="choose()">Choose</button>
+    </div>
+    <div id="chooseContainer" class="mb-3 container bg-blury mt-4">
 
-    <div class="mb-3 row justify-content-center">
-        <label for="inputPassword" class="col-md-auto col-form-label text-danger me-md-3">How Many Cars?</label>
-        <input type="text" class="form-control-sm col-md-1 me-md-4 text-danger" id="inputPassword">
-        <button class="btn btn-danger text-warning col-auto">Choose</button>
+
     </div>
     <div id="choosing"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
