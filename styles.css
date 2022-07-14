@@ -1,0 +1,43 @@
+* {
+    box-shadow: none !important;
+    outline: none !important;
+    max-width: 100% !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url('./bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(29, 29, 27);
+}
+
+.bg-road {
+    background-image: url('./bg-road.jpg');
+    background-size: contain;
+    background-position: center;
+    min-height: 54px;
+    opacity: 90%;
+}
+
+.bg-blury {
+    background: rgba(255, 0, 0, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(255, 0, 0, 0.23);
+}
+
+.offcanvas-backdrop {
+    opacity: 0 !important;
+}
+
+.min-height-74{
+    min-height: 74px;
+}

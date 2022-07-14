@@ -1,6 +1,9 @@
 
 function race() {
+    window.scroll(0, 0);//Scrolling to the top of the page
     let win = [];//cars ranking after finishing race
+    alert('<strong>The match will be started in 2 seconds:)</strong>', 'success');
+    $('#chooseContainer').html("");//Empty choosing container
     let timer = setInterval(() => {
         for (let i = 0; i < numberOfCars; i++) {
             $(`#${pos[i] - 1}`).html('');
@@ -65,10 +68,10 @@ function race() {
         console.log('end step', pos);
 
 
-        if (numberOfCars < 1) {
-            console.log('END');
+        if (numberOfCars <= 1) {
             clearInterval(timer);
             showResults(win.concat(...cars));
+            clearRoad();
         };
-    }, 5000);
+    }, 2000);
 };
